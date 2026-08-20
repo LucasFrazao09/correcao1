@@ -1,6 +1,5 @@
 <?php
-require "infra/conexao.php"; // ajuste o caminho conforme onde o conexao.php estiver salvo
-
+require "infra/conexao.php"; 
 // INSERIR
 if (isset($_POST['cadastrar'])) {
     $nome = $_POST['nome'];
