@@ -1,16 +1,16 @@
 <?php
 
-    $host = "localhost";
-    $usuario = "root";
-    $senha = "root";
-    $banco = "correcao";
+$host = "localhost";
+$usuario = "root";
+$senha = "root";
+$banco = "crud_aula_erros";
 
-    $conexao = new mysqli($host, $usuario, $senha, $banco);
+$conn = new mysqli($host, $usuario, $senha, $banco);
 
-    if ($conexao->connect_error) {
-        die("Erro de conexão com o banco: " . $conexao->connect_error);
-    };
+if ($conn->connect_error) {
+    die("Erro de conexão com o banco: " . $conn->connect_error);
+}
 
-    $conexao->set_charset("utf8mb4");
+$conn->set_charset("utf8mb4");
 
-    ?>
+?>
